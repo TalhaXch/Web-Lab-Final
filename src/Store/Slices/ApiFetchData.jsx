@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const ApiFetchSlice = createSlice(
+const ApiFetchData = createSlice(
     {
         name: "ApiSlice",
         initialState : [],
@@ -33,8 +33,8 @@ const addToProfileSlice = createSlice({
     }
 })
 
-export {ApiFetchSlice,missionSlice,addToProfileSlice};
-export const {addToRocket}=ApiFetchSlice.actions;
+export {ApiFetchData,missionSlice,addToProfileSlice};
+export const {addToRocket}=ApiFetchData.actions;
 export const {addToMission}=missionSlice.actions;
 export const {addToProfile}=addToProfileSlice.actions;
 

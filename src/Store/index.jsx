@@ -1,11 +1,11 @@
-import { ApiFetchSlice, addToProfileSlice, missionSlice } from "./Slices/ApiFetchData";
+import { ApiFetchData, addToProfileSlice, missionSlice } from "./Slices/ApiFetchData";
 import { configureStore } from "@reduxjs/toolkit";
 
 
 
 const store = configureStore({
     reducer:{
-        ApiSlice : ApiFetchSlice.reducer,
+        ApiSlice : ApiFetchData.reducer,
         missionSlice :missionSlice.reducer,
         Profile: addToProfileSlice.reducer
     }
